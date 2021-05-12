@@ -1,0 +1,443 @@
+<div class="modal fade" id="website" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content popup-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add / Edit Website</h5>
+        <button type="button" class="close close-b" data-dismiss="modal" aria-label="Close">
+          <span>x</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group mt-20 mb-20">
+          <label for="basicpill-phoneno-input" class="label-100">
+            Add or Edit Website Url
+          </label>
+          <input class="form-control input-field">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary save-btn">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="facebook" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content popup-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add / Edit Facebook </h5>
+        <button type="button" class="close close-b" data-dismiss="modal" aria-label="Close">
+          <span>x</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group mt-20 mb-20">
+          <label for="basicpill-phoneno-input" class="label-100">
+            Add or Edit Facebook Url
+          </label>
+          <input class="form-control input-field">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary save-btn">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="linkedin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content popup-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add / Edit Linkedin </h5>
+        <button type="button" class="close close-b" data-dismiss="modal" aria-label="Close">
+          <span>x</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group mt-20 mb-20">
+          <label for="basicpill-phoneno-input" class="label-100">
+            Add or Edit Linkedin Url
+          </label>
+          <input class="form-control input-field">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary save-btn">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="twitter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content popup-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add / Edit Twitter </h5>
+        <button type="button" class="close close-b" data-dismiss="modal" aria-label="Close">
+          <span>x</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group mt-20 mb-20">
+          <label for="basicpill-phoneno-input" class="label-100">
+            Add or Edit Twitter Url
+          </label>
+          <input class="form-control input-field">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary save-btn">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="addprofileimg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content popup-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Profile Image </h5>
+        <button type="button" class="close close-b" data-dismiss="modal" aria-label="Close">
+          <span>x</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <div class="input-group mb-3 px-2 py-1 bg-white file-upload-bdr">
+              <input id="upload" type="file" onchange="readURL(this);" class="form-control">
+              <label id="upload-label" for="upload" class="font-weight-light text-muted">Add Profile Image</label>
+              <div class="input-group-append">
+                <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose Image</small></label>
+              </div>
+            </div>
+            <p class="error font-size-12">Please use image with size less than 3 MB and dimensions 1x1 ratio (200 x 200 Pixels)</p>
+            <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary save-btn">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="addimg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content popup-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Image / Video </h5>
+        <button type="button" class="close close-b" data-dismiss="modal" aria-label="Close">
+          <span>x</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <div class="input-group mb-3 px-2 py-1 bg-white file-upload-bdr">
+              <input id="upload" type="file" onchange="readURL(this);" class="form-control">
+              <label id="upload-label" for="upload" class="font-weight-light text-muted">Fuatured Image</label>
+              <div class="input-group-append">
+                <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose Image</small></label>
+              </div>
+            </div>
+            <p class="error font-size-12">Please use image with size less than 3 MB and dimensions 4x3 ratio (450 x 320 Pixels)</p>
+            <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary save-btn">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="editimg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content popup-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Image / Video </h5>
+        <button type="button" class="close close-b" data-dismiss="modal" aria-label="Close">
+          <span>x</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <div class="input-group mb-3 px-2 py-1 bg-white file-upload-bdr">
+              <input id="upload" type="file" onchange="readURL(this);" class="form-control">
+              <label id="upload-label" for="upload" class="font-weight-light text-muted">Fuatured Image</label>
+              <div class="input-group-append">
+                <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose Image</small></label>
+              </div>
+            </div>
+            <p class="error font-size-12">Please use image with size less than 3 MB and dimensions 4x3 ratio (450 x 320 Pixels)</p>
+            <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block">
+              <img src="assets/images/4-3-ratio.png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary save-btn">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="container-fluid">
+
+    <!-- start page title -->
+    <div class="row">
+      <div class="col-12">
+        <div class="page-title-box d-flex align-items-center justify-content-between">
+          <h4 class="mb-0">Profile</h4>
+
+          <div class="page-title-right">
+            <ol class="breadcrumb m-0">
+              <li class="breadcrumb-item"><a href="javascript: void(0);">Konsult</a></li>
+              <li class="breadcrumb-item active">Profile</li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- end page title -->
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body">
+
+            <!-- Begin Table 1 -->
+            <div class="profile-area">
+
+              <div class="form-group text-right">
+                <a href="edit-profile.html">
+                  <button type="button" class="btn btn-profile waves-effect waves-light">
+                    Edit Profile
+                  </button>
+                </a>
+              </div>
+
+              <div class="profile-banner" style="background:url(assets/images/banner-big.jpg) top center no-repeat; background-size: cover;">
+
+                <div class="media profile-konsult">
+                  <div class="mr-4">
+                    <img src="assets/images/avatar-2.jpg" alt="" class="avatar-profile">
+                    <span class="profile-img-upload" data-toggle="modal" data-target="#addprofileimg"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="media-body align-self-center overflow-hidden">
+                    <div>
+                      <h5 class="text-truncate">Sean Williams</h5>
+                      <p class="data">Public Speaker, Author & Career Coach</p>
+                      <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Massachusetts, United States</p>
+                      <p class="rating">
+                        <i class="fa fa-star active mr-1"></i>
+                        <i class="fa fa-star active mr-1"></i>
+                        <i class="fa fa-star active mr-1"></i>
+                        <i class="fa fa-star active mr-1"></i>
+                        <i class="fa fa-star mr-1"></i> 67 total reviews
+                      </p>
+                      <div class="form-group text-left m-0">
+                        <a href="#">
+                          <button type="button" class="btn btn-profile waves-effect waves-light">
+                            Ask a question for $49
+                          </button>
+                        </a>
+                      </div>
+
+                      <p class="mt-2 user-profile"><i class="fa fa-user-circle" aria-hidden="true"></i> www.konsult-member.com/krishna.kola</p>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="profile-data">
+                <h4>About me</h4>
+
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                </p>
+
+                <p> All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                </p>
+
+              </div>
+
+              <div class="profile-data">
+                <h4>Services offered by me</h4>
+
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                </p>
+
+              </div>
+
+
+              <div class="profile-data">
+                <h4>Featured images and Videos</h4>
+
+                <div class="row">
+
+                  <div class="col-md-3">
+                    <div class="profile-video-image-box">
+                      <img class="img-fluid" alt="200x200" src="assets/images/img-4.jpg">
+                      <span class="img-delete"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+                      <span class="img-edit"  data-toggle="modal" data-target="#editimg"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="profile-video-image-box">
+                      <img class="img-fluid" alt="200x200" src="assets/images/img-4.jpg">
+                      <span class="img-delete"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+                      <span class="img-edit"  data-toggle="modal" data-target="#editimg"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-3">
+                    <div class="profile-video-image-box">
+                      <img class="img-fluid" alt="200x200" src="assets/images/img-4.jpg">
+                      <span class="img-delete"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+                      <span class="img-edit"  data-toggle="modal" data-target="#editimg"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-3">
+                    <div class="user-upload"  data-toggle="modal" data-target="#addimg">
+                      <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                </div>
+
+
+              </div>
+
+
+              <div class="profile-data">
+
+                <div class="row">
+
+                  <div class="col-md-3">
+                    <div class="social-link"  data-toggle="modal" data-target="#website">
+                      <i class="fa fa-globe" aria-hidden="true"></i><br>
+                      Add Website
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="social-link"  data-toggle="modal" data-target="#facebook">
+                      <i class="fa fa-facebook-square" aria-hidden="true"></i><br>
+                      Add Facebook
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="social-link"  data-toggle="modal" data-target="#linkedin">
+                      <i class="fa fa-linkedin-square" aria-hidden="true"></i><br>
+                      Add Linkedin
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="social-link"  data-toggle="modal" data-target="#twitter">
+                      <i class="fa fa-twitter-square" aria-hidden="true"></i><br>
+                      Add Twitter
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="profile-data">
+                <h4>67 Reviews</h4>
+                <div class="row">
+
+                  <div class="media border-bottom-media py-4">
+                    <img class="mr-2 rounded-circle avatar-xs" src="assets/images/avatar-2.jpg" alt="">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Marion Walker <small class="text-muted float-right">1 hr ago</small></h5>
+                      <p class="ratings">
+                        <i class="fa fa-star active mr-1"></i>
+                        <i class="fa fa-star active mr-1"></i>
+                        <i class="fa fa-star active mr-1"></i>
+                        <i class="fa fa-star active mr-1"></i>
+                        <i class="fa fa-star mr-1"></i>
+                      </p>
+                      <p class="text-muted">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+
+                      </p>
+
+                      <a href="javascript: void(0);" class="text-muted font-13 d-inline-block"><i class="mdi mdi-reply"></i> Reply</a>
+                    </div>
+                  </div>
+
+                  <div class="media border-bottom-media py-4">
+                    <img class="mr-2 rounded-circle avatar-xs" src="assets/images/avatar-2.jpg" alt="">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Marion Walker <small class="text-muted float-right">1 hr ago</small></h5>
+                      <p class="ratings">
+                        <i class="fa fa-star active mr-1"></i>
+                        <i class="fa fa-star active mr-1"></i>
+                        <i class="fa fa-star active mr-1"></i>
+                        <i class="fa fa-star active mr-1"></i>
+                        <i class="fa fa-star mr-1"></i>
+                      </p>
+                      <p class="text-muted">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+
+                      </p>
+
+                      <a href="javascript: void(0);" class="text-muted font-13 d-inline-block"><i class="mdi mdi-reply"></i> Reply</a>
+                    </div>
+                  </div>
+
+
+
+                  <div class="media py-4 col-md-12 py-3">
+                    <div class="row  col-md-12 p-0">
+                      <div class="col-md-12 ">
+                        <textarea id="textarea" class="form-control" maxlength="225" rows="4" placeholder='This textarea has a limit of 225 chars'></textarea>
+                      </div>
+
+                      <div class="col-md-12 mt-3">
+                        <button type="submit" class="btn btn-primary w-md">Post Review</button>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+            <!--End of Table 1 -->
+
+            <!-- end table-responsive -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div> <!-- container-fluid -->
+</div>
+<!-- End Page-content -->

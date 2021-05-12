@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "konsult"
+    }
+  },
+  "defaultProject": "konsult",
+  "cli": {
+    "analytics": false
+  }
 }
