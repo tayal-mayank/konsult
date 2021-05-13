@@ -10,14 +10,13 @@ import { RequestsComponent } from './requests/requests.component';
 import { RequestsMainComponent } from './requests/requests-main/requests-main.component';
 import { ViewRequestComponent } from './requests/view-request/view-request.component';
 import { PaymentSettingComponent } from './payment-setting/payment-setting.component';
-import { PaymentSettingMainComponent } from './payment-setting/payment-setting-main/payment-setting-main.component';
-import { KonsultPaypalComponent } from './payment-setting/konsult-paypal/konsult-paypal.component';
-import { KonsultStripeComponent } from './payment-setting/konsult-stripe/konsult-stripe.component';
 import { NotificationSettingComponent } from './notification-setting/notification-setting.component';
 import { SubscriptionSettingComponent } from './subscription-setting/subscription-setting.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileMainComponent } from './profile/profile-main/profile-main.component';
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
+import { KonsultPaypalComponent } from './konsult-paypal/konsult-paypal.component';
+import { KonsultStripeComponent } from './konsult-stripe/konsult-stripe.component';
 
 // User Components
 import { ChangePasswordComponent } from './change-password/change-password.component';
@@ -38,11 +37,9 @@ const routes: Routes = [
     { path: ':id', component: ViewEarningComponent }
   ] },
 
-  { path: 'payment-setting', component: PaymentSettingComponent, children: [
-    { path: '', component: PaymentSettingMainComponent },
-    { path: 'konsult-paypal', component: KonsultPaypalComponent },
-    { path: 'konsult-stripe', component: KonsultStripeComponent }
-  ] },
+  { path: 'payment-setting', component: PaymentSettingComponent },
+  { path: 'konsult-paypal', component: KonsultPaypalComponent },
+  { path: 'konsult-stripe', component: KonsultStripeComponent },
 
   { path: 'subscription-setting', component: SubscriptionSettingComponent },
 

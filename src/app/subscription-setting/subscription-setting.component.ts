@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-subscription-setting',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubscriptionSettingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    // console.log(this.route.url.value[0].path);
   }
 
 }
